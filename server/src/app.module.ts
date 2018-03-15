@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
-import { SeekerService } from './seeker.service';
+import { SeekerGateway } from './gateway/seeker.gateway';
 
 @Module({
   imports: [],
   controllers: [],
-  components: [SeekerService],
+  components: [SeekerGateway],
 })
 export class ApplicationModule {}
